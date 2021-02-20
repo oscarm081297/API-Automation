@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.PostTest">
+      <class name="tests.CommentTest">
         <methods>
+          <include name="get_Comment_Negative"/>
           <include name="Setup"/>
-          <include name="delete_post"/>
         </methods>
-      </class> <!-- tests.PostTest -->
+      </class> <!-- tests.CommentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

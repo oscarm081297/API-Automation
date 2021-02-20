@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.PostTest" hash-for-method="delete_post_negative">delete_post_negative</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.CommentTest" hash-for-method="get_Comment_Negative">get_Comment_Negative</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +120,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.PostTest</span>
+              <span class="class-name">tests.CommentTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="delete_post_negative">
-                  </a> <!-- delete_post_negative -->
-                  <span class="method-name">delete_post_negative</span>
+                  <a name="get_Comment_Negative">
+                  </a> <!-- get_Comment_Negative -->
+                  <span class="method-name">get_Comment_Negative</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +135,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/x7/r5v5rlz511v0bdkrl6h1_1cxmz0qcq/T/testng-eclipse--1961397750/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/x7/r5v5rlz511v0bdkrl6h1_1cxmz0qcq/T/testng-eclipse-176659808/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,11 +144,11 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.PostTest&quot;&gt;
+      &lt;class name=&quot;tests.CommentTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;delete_post_negative&quot;/&gt;
+          &lt;include name=&quot;get_Comment_Negative&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- tests.PostTest --&gt;
+      &lt;/class&gt; &lt;!-- tests.CommentTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -190,14 +190,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'delete_post_negative')
-data.setCell(0, 2, 'tests.PostTest')
-data.setCell(0, 3, 5050);
+data.setCell(0, 1, 'get_Comment_Negative')
+data.setCell(0, 2, 'tests.CommentTest')
+data.setCell(0, 3, 2573);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -212,29 +212,21 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">5 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.PostTest</span>
+              <span class="ignored-class-name">tests.CommentTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">get_allPosts_Negative</span>
+                <span class="ignored-method-name">create_comment</span>
                 <br/>
-                <span class="ignored-method-name">update_post</span>
+                <span class="ignored-method-name">get_allComments</span>
                 <br/>
-                <span class="ignored-method-name">get_post</span>
+                <span class="ignored-method-name">get_Comment</span>
                 <br/>
-                <span class="ignored-method-name">update_post_invalidId</span>
+                <span class="ignored-method-name">get_allComments_Negative</span>
                 <br/>
-                <span class="ignored-method-name">create_post</span>
-                <br/>
-                <span class="ignored-method-name">get_allPosts</span>
-                <br/>
-                <span class="ignored-method-name">create_post_with_fake_token</span>
-                <br/>
-                <span class="ignored-method-name">delete_post</span>
-                <br/>
-                <span class="ignored-method-name">get_post_negative</span>
+                <span class="ignored-method-name">create_comment_negative</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -246,14 +238,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.PostTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.CommentTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">Setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">delete_post_negative</span>
-                <span class="method-start">585 ms</span>
+                <span class="method-name">get_Comment_Negative</span>
+                <span class="method-start">577 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

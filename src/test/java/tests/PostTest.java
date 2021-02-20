@@ -2,6 +2,7 @@ package tests;
 
 import org.testng.annotations.Test;
 
+import de.svenjacobs.loremipsum.LoremIpsum;
 import helpers.DataHelper;
 import models.Post;
 import specifications.RequestSpecs;
@@ -16,12 +17,13 @@ import org.hamcrest.core.StringContains;
 public class PostTest extends BaseTest{
 
 	int createdPost;
-	
+	private LoremIpsum loremIpsum;
 	//Post tests
 	
 	@Test(priority=0)
 	public void create_post() {
-		Post post = new Post(DataHelper.randomString(4),DataHelper.randomString(20));
+		loremIpsum = new LoremIpsum();
+		Post post = new Post(loremIpsum.getWords(5),loremIpsum.getParagraphs());
 		System.out.println("Post Positive");
 	       createdPost = given()
 	        .spec(RequestSpecs.generateToken())

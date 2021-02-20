@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="9" total="10" passed="1">
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5816" started-at="2021-02-20T13:35:59 CST" finished-at="2021-02-20T13:36:05 CST">
+  <suite name="Default suite" duration-ms="3188" started-at="2021-02-20T14:42:29 CST" finished-at="2021-02-20T14:42:32 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5816" started-at="2021-02-20T13:35:59 CST" finished-at="2021-02-20T13:36:05 CST">
-      <class name="tests.PostTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:tests.PostTest@1c3a4799]" name="Setup" is-config="true" duration-ms="573" started-at="2021-02-20T13:35:59 CST" finished-at="2021-02-20T13:35:59 CST">
+    <test name="Default test" duration-ms="3188" started-at="2021-02-20T14:42:29 CST" finished-at="2021-02-20T14:42:32 CST">
+      <class name="tests.CommentTest">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:tests.CommentTest@1c3a4799]" name="Setup" is-config="true" duration-ms="561" started-at="2021-02-20T14:42:29 CST" finished-at="2021-02-20T14:42:29 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="delete_post_negative()[pri:0, instance:tests.PostTest@1c3a4799]" name="delete_post_negative" duration-ms="5050" started-at="2021-02-20T13:35:59 CST" finished-at="2021-02-20T13:36:04 CST">
+        <test-method status="PASS" signature="get_Comment_Negative()[pri:0, instance:tests.CommentTest@1c3a4799]" name="get_Comment_Negative" duration-ms="2573" started-at="2021-02-20T14:42:29 CST" finished-at="2021-02-20T14:42:32 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- delete_post_negative -->
-      </class> <!-- tests.PostTest -->
+        </test-method> <!-- get_Comment_Negative -->
+      </class> <!-- tests.CommentTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
