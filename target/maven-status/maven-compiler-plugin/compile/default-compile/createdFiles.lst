@@ -1,8 +1,0 @@
-models/User.class
-helpers/RequestHelper.class
-specifications/ResponseSpecs.class
-specifications/RequestSpecs.class
-models/Article.class
-models/Post.class
-helpers/DataHelper.class
-models/Comment.class
