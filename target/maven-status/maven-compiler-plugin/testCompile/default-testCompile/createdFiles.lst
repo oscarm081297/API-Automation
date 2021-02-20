@@ -1,5 +1,6 @@
 tests/PostTest.class
 tests/MiscTest.class
 tests/BaseTest.class
+tests/CommentTest.class
 tests/UserTest.class
 tests/ArticleTest.class
