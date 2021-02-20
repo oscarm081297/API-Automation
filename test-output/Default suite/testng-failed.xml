@@ -5,8 +5,8 @@
     <classes>
       <class name="tests.CommentTest">
         <methods>
-          <include name="get_Comment_Negative"/>
           <include name="Setup"/>
+          <include name="delete_comment"/>
         </methods>
       </class> <!-- tests.CommentTest -->
     </classes>

@@ -32,7 +32,7 @@ public class UserTest extends BaseTest {
     public void Test_Create_User_Successful() {
     	
     	  user = new User(DataHelper.randomEmail(), "password", "NewUser2");
-    	  System.out.println("Email-> "+user.getEmail());
+    	 
     	  
     	  given()
                   .body(user)

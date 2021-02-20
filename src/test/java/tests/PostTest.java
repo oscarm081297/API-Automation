@@ -24,7 +24,7 @@ public class PostTest extends BaseTest{
 	public void create_post() {
 		loremIpsum = new LoremIpsum();
 		Post post = new Post(loremIpsum.getWords(5),loremIpsum.getParagraphs());
-		System.out.println("Post Positive");
+		System.out.println("Post Post Positive");
 	       createdPost = given()
 	        .spec(RequestSpecs.generateToken())
 	        .body(post)
@@ -40,7 +40,7 @@ public class PostTest extends BaseTest{
 	@Test
 	public void create_post_with_fake_token() {
 		Post post = new Post(DataHelper.randomString(4),DataHelper.randomString(12));
-		System.out.println("Post Negative");
+		System.out.println("Post Post Negative");
 		 given()
 	        .spec(RequestSpecs.generateFakeToken())
 	        .body(post)
@@ -57,7 +57,7 @@ public class PostTest extends BaseTest{
 	
 	@Test
 	public void get_allPosts() {
-		System.out.println("Get All Positive");
+		System.out.println("Get All Post Positive");
     	given()
     	 .spec(RequestSpecs.generateToken())
         .get("v1/posts")
@@ -69,7 +69,7 @@ public class PostTest extends BaseTest{
 	
 	@Test
 	public void get_allPosts_Negative() {
-		System.out.println("Get All Negative");
+		System.out.println("Get All Post Negative");
     	given()
     	 .spec(RequestSpecs.generateFakeToken())
         .get("v1/posts")
@@ -81,7 +81,7 @@ public class PostTest extends BaseTest{
 	
 	@Test
 	public void get_post() {
-		System.out.println("Get Positive");
+		System.out.println("Get Post Positive");
 		String postId = DataHelper.get_post_id();
     	given()
    	 	.spec(RequestSpecs.generateToken())
@@ -94,7 +94,7 @@ public class PostTest extends BaseTest{
 	
 	@Test
 	public void get_post_negative() {
-		System.out.println("Get Negative");
+		System.out.println("Get Post Negative");
     	given()
    	 	.spec(RequestSpecs.generateToken())
        .get("v1/post/009")
@@ -110,7 +110,7 @@ public class PostTest extends BaseTest{
 	
 	@Test
 	public void update_post() {
-		System.out.println("Put Positive");
+		System.out.println("Put Post Positive");
 		Post post = new Post(DataHelper.randomString(4),DataHelper.randomString(12));
 		String postId = DataHelper.get_post_id();
     	given()
@@ -125,7 +125,7 @@ public class PostTest extends BaseTest{
 	
 	@Test
 	public void update_post_invalidId() {
-		System.out.println("Put Negative");
+		System.out.println("Put Post Negative");
 		Post post = new Post(DataHelper.randomString(4),DataHelper.randomString(12));
     	given()
    	 	.spec(RequestSpecs.generateToken())
@@ -143,7 +143,7 @@ public class PostTest extends BaseTest{
 	
 	@Test(priority=1)
 	public void delete_post() {
-		System.out.println("Delete Positive");
+		System.out.println("Delete Post Positive");
 		given()
    	 	.spec(RequestSpecs.generateToken())
    	 	.delete("v1/post/"+createdPost)
@@ -157,7 +157,7 @@ public class PostTest extends BaseTest{
 	
 	@Test()
 	public void delete_post_negative() {
-		System.out.println("Delete Negative");
+		System.out.println("Delete Post Negative");
 		given()
    	 	.spec(RequestSpecs.generateToken())
    	 	.delete("v1/post/000")

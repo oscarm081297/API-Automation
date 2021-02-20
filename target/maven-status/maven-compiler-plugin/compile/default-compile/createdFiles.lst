@@ -5,3 +5,4 @@ specifications/RequestSpecs.class
 models/Article.class
 models/Post.class
 helpers/DataHelper.class
+models/Comment.class

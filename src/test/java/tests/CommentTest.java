@@ -7,7 +7,6 @@ import org.hamcrest.core.StringContains;
 import org.testng.annotations.Test;
 
 import de.svenjacobs.loremipsum.LoremIpsum;
-
 import models.Comment;
 import specifications.ResponseSpecs;
 
@@ -17,11 +16,9 @@ public class CommentTest extends BaseTest{
 	int createdComment;
 	private LoremIpsum loremIpsum;
 	
-	
-	
 	//Post
 	
-	@Test
+	@Test(priority=0)
 	public void create_comment() {
 		System.out.println("Post Comment Positive");
 		loremIpsum = new LoremIpsum();
@@ -82,7 +79,7 @@ public class CommentTest extends BaseTest{
 	
 	@Test
 	public void get_Comment() {
-		System.out.println("Get All Comments Positive");
+		System.out.println("Get Comment Positive");
     	given()
     	.auth().basic("testuser", "testpass")
         .get("v1/comment/105/110")
@@ -94,7 +91,7 @@ public class CommentTest extends BaseTest{
 	
 	@Test
 	public void get_Comment_Negative() {
-		System.out.println("Get All Comments Positive");
+		System.out.println("Get Comment Negative");
     	given()
     	.auth().basic("testuser", "testpass")
         .get("v1/comment/1053/1103")
@@ -105,9 +102,65 @@ public class CommentTest extends BaseTest{
 	}
 	
 	//Put
+	@Test(priority=1)
+	public void update_comment() {
+		System.out.println("Put Comment Positive");
+		loremIpsum = new LoremIpsum();
+		Comment comment = new Comment("Updated",loremIpsum.getWords(30));
+    	given()
+    	.auth().basic("testuser", "testpass")
+   	 	.body(comment)
+   	 	.put("v1/comment/105/"+createdComment)
+   	 	.then()
+   	 	.statusCode(200)
+   	 	.and()
+   	 	.spec(ResponseSpecs.defaultSpec());
+	}
 	
+	@Test
+	public void update_comment_negativet() {
+		System.out.println("Put Comment Negative");
+		loremIpsum = new LoremIpsum();
+		Comment comment = new Comment("Updated",loremIpsum.getWords(30));
+    	given()
+    	.auth().basic("testuser", "testpass")
+   	 	.body(comment)
+   	 	.put("v1/comment/105/9999")
+   	 	.then()
+   	 	.statusCode(406)
+   	 	.and()
+   	 	.body("message", equalTo("Comment could not be updated"))
+   	 	.and()
+   	 	.spec(ResponseSpecs.defaultSpec());
+	}
 	
+	//Delete
 	
+	@Test(priority=2)
+	public void delete_comment() {
+		System.out.println("Delete Comment Positive");
+		given()
+		.auth().basic("testuser", "testpass")
+   	 	.delete("v1/comment/105/"+createdComment)
+   	 	.then()
+   	 	.statusCode(200)
+   	 	.and()
+   	 	.body("message", equalTo("Comment deleted"))
+   	 	.spec(ResponseSpecs.defaultSpec());
+	}
+	
+	@Test
+	public void delete_comment_negative() {
+		System.out.println("Delete Comment Negative");
+		given()
+		.auth().basic("testuser", "testpass")
+   	 	.delete("v1/comment/105/9999")
+   	 	.then()
+   	 	.statusCode(406)
+   	 	.and()
+   	 	.body("message", equalTo("Comment could not be deleted"))
+   	 	.spec(ResponseSpecs.defaultSpec());
+	}
 	
 
 }
