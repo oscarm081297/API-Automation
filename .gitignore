@@ -1,5 +1,3 @@
-.target
-.test-output
+*test-output
 .DS_Store
-!target/
-target*
+*target
