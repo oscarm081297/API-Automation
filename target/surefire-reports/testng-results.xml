@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-20T13:08:46 CST" name="Surefire suite" finished-at="2021-02-20T13:09:10 CST" duration-ms="23630">
+    <groups>
+    </groups>
+    <test started-at="2021-02-20T13:08:46 CST" name="Surefire test" finished-at="2021-02-20T13:09:10 CST" duration-ms="23630">
+      <class name="tests.ArticleTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.ArticleTest@15c43bd9]" started-at="2021-02-20T13:08:46 CST" name="Setup" finished-at="2021-02-20T13:08:47 CST" duration-ms="1411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Create_Article()[pri:0, instance:tests.ArticleTest@15c43bd9]" started-at="2021-02-20T13:08:47 CST" name="Test_Create_Article" finished-at="2021-02-20T13:08:53 CST" duration-ms="5475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Create_Article -->
+        <test-method signature="Test_Create_Article_Fail()[pri:0, instance:tests.ArticleTest@15c43bd9]" started-at="2021-02-20T13:08:53 CST" name="Test_Create_Article_Fail" finished-at="2021-02-20T13:08:53 CST" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Create_Article_Fail -->
+      </class> <!-- tests.ArticleTest -->
+      <class name="tests.MiscTest">
+        <test-method signature="Test_HomePage()[pri:0, instance:tests.MiscTest@4f209819]" started-at="2021-02-20T13:08:54 CST" name="Test_HomePage" finished-at="2021-02-20T13:08:55 CST" duration-ms="530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_HomePage -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.MiscTest@4f209819]" started-at="2021-02-20T13:08:54 CST" name="Setup" finished-at="2021-02-20T13:08:54 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_Ping()[pri:0, instance:tests.MiscTest@4f209819]" started-at="2021-02-20T13:08:55 CST" name="Test_Ping" finished-at="2021-02-20T13:08:55 CST" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Ping -->
+      </class> <!-- tests.MiscTest -->
+      <class name="tests.UserTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.UserTest@3d74bf60]" started-at="2021-02-20T13:08:53 CST" name="Setup" finished-at="2021-02-20T13:08:53 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Test_CreateUser_AlreadyExist()[pri:0, instance:tests.UserTest@3d74bf60]" started-at="2021-02-20T13:08:53 CST" name="Test_CreateUser_AlreadyExist" finished-at="2021-02-20T13:08:54 CST" duration-ms="683" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_CreateUser_AlreadyExist -->
+        <test-method signature="Test_Create_User_Successful()[pri:1, instance:tests.UserTest@3d74bf60]" started-at="2021-02-20T13:09:07 CST" name="Test_Create_User_Successful" finished-at="2021-02-20T13:09:08 CST" duration-ms="689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Create_User_Successful -->
+        <test-method signature="Test_Login_Successful()[pri:2, instance:tests.UserTest@3d74bf60]" started-at="2021-02-20T13:09:09 CST" name="Test_Login_Successful" finished-at="2021-02-20T13:09:10 CST" duration-ms="757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Login_Successful -->
+      </class> <!-- tests.UserTest -->
+      <class name="tests.PostTest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:08:55 CST" name="Setup" finished-at="2021-02-20T13:08:55 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="create_post()[pri:0, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:08:55 CST" name="create_post" finished-at="2021-02-20T13:08:57 CST" duration-ms="1317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_post -->
+        <test-method signature="create_post_with_fake_token()[pri:0, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:08:57 CST" name="create_post_with_fake_token" finished-at="2021-02-20T13:08:57 CST" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_post_with_fake_token -->
+        <test-method signature="get_allPosts()[pri:0, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:08:57 CST" name="get_allPosts" finished-at="2021-02-20T13:08:58 CST" duration-ms="1201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_allPosts -->
+        <test-method signature="get_allPosts_Negative()[pri:0, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:08:58 CST" name="get_allPosts_Negative" finished-at="2021-02-20T13:08:59 CST" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_allPosts_Negative -->
+        <test-method signature="get_post()[pri:0, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:08:59 CST" name="get_post" finished-at="2021-02-20T13:09:02 CST" duration-ms="2942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_post -->
+        <test-method signature="get_post_negative()[pri:0, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:09:02 CST" name="get_post_negative" finished-at="2021-02-20T13:09:03 CST" duration-ms="1108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_post_negative -->
+        <test-method signature="update_post()[pri:0, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:09:03 CST" name="update_post" finished-at="2021-02-20T13:09:06 CST" duration-ms="2685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_post -->
+        <test-method signature="update_post_invalidId()[pri:0, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:09:06 CST" name="update_post_invalidId" finished-at="2021-02-20T13:09:07 CST" duration-ms="1369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_post_invalidId -->
+        <test-method signature="delete_post()[pri:1, instance:tests.PostTest@15eb5ee5]" started-at="2021-02-20T13:09:08 CST" name="delete_post" finished-at="2021-02-20T13:09:09 CST" duration-ms="1211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_post -->
+      </class> <!-- tests.PostTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

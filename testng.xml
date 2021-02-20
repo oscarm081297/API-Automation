@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Prod Execution" thread-count="2" parallel="tests">
+  <test name="UserTests">
+    <classes>
+      <class name="UserTest"/>
+    </classes>
+  </test>
+
+  <test name="Miscellaneous">
+    <classes>
+      <class name="MiscTest"/>
+    </classes>
+  </test>
+</suite>
