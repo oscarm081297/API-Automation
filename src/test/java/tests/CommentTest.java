@@ -44,7 +44,7 @@ public class CommentTest extends BaseTest{
 		given()
 	   	        .auth().basic("testuser", "testpass")
 	   	        .body(comment)
-	   	        .post("/v1/comment/01000")
+	   	        .post("/v1/comment/7654321")
 	   	        .then()
 	   	        .statusCode(406)
 	   	        .and()
